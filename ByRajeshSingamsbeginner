@@ -71,15 +71,19 @@ here we will configuere
 job name and targets like https://localhost:9090
 
 
-
-
-
-
-
-
-
+==================monitoring nodes(servers)=====================================
+for this we need to install node exporter(like cpu usuage)
 
 ./2-node-exporter.sh
+
+vi /etc/prometheus/prometheus.yml
+
+
+
+
+
+
+
 
 
 
