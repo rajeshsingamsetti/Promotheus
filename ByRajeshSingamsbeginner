@@ -8,4 +8,78 @@ Installation.
 
 ref url: https://github.com/in4it/prometheus-course
 
+take ubuntu 18.04 + launch instance + 
+login as a root
+
+git clone https://github.com/in4it/prometheus-course.git
+
+cd  prometheus-course
+cd scripts
+
+we need to install this three scripts.
+
+./1-install.sh
+after check promothus install or not 
+ps aux | grep prometheus
+
+in chrome
+ipaddress:9090/graph
+
+under execute we will see that execute metrics(it will there in default)
+
+For nice dashboards purpose we are using grafana
+
+cd scripts
+./3-install-grafana.sh
+
+ps aux | grep grafana
+
+inchrome:
+ipaddress:3000/login
+username: admin
+password: admin
+
+go to settings --> configurations --> data sources --> add data source
+
+name: promothues
+type: promothues
+
+url: http://localhost:9090
+aceess (default)
+
+click on save and test
+
+
+now go to side menu + plus icon + create + create dashboard + choose graph + edit +
+
+under below metrics tab + choose promethues + copy and paste the (sample script of promethues metrics) what we created
+it will create the graph what it will had in promethues + same graph it will show in grafana (grafana for better visualization)
+
+
+Basic concepts:
+
+all data stored in as time series
+every time series identify by the metric name
+
+** Promethues configuration:
+
+cat /etc/prometheus/prometheus.yml
+
+it will store Promethues configuraton file its in yml format
+
+here we will configuere
+job name and targets like https://localhost:9090
+
+
+
+
+
+
+
+
+
+
+./2-node-exporter.sh
+
+
 
