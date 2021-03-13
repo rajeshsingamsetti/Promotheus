@@ -1,1 +1,11 @@
 Its An monitoring tool
+provides metrics & alerting
+its flexible query launguage
+
+it collects metrics from monitor targets by scraping metrics http endpoints
+
+Installation.
+
+ref url: https://github.com/in4it/prometheus-course
+
+
